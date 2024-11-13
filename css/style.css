@@ -1,0 +1,308 @@
+* {
+    margin: 0;
+
+    box-sizing: border-box;
+    font-family: Tahoma;
+}
+
+body, html {
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(to right, #9b59b6, #372ba5);
+}
+
+.container {
+    display: flex;
+    width: 80%;
+    max-width: 1000px;
+    border-radius: 8px;
+    overflow: hidden;
+    background-color: #ffffff;
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.1);
+    margin-top: 80px;
+    margin-bottom: 80px;
+}
+
+.left-section {
+    flex: 1;
+    background: linear-gradient(to bottom, #f7c6ff, #dc83ff);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0px;
+}
+
+.photo {
+    width: 100%;
+    display: flex;
+    padding-left: 455px;
+    padding-top: 25px;
+    
+}
+
+.photo img {
+    width: 15px;
+    height: 11px;
+    transition: opacity 0.2s ease;
+    position: absolute;
+}
+
+.photo img.second {
+    opacity: 0;
+}
+
+.photo:hover img.first {
+    opacity: 0;
+}
+
+.photo:hover img.second {
+    opacity: 1;
+}
+
+
+.illustration {
+    width: 500px;
+    height: 100%;
+    background-image: url('../фото/фон.png');
+    background-size: cover;
+    background-position: center;
+
+}
+
+.right-section {
+
+    padding: 40px;
+    color: #333333;
+    margin-top: 60px;
+
+}
+
+h1 {
+    font-size: 18px;
+    margin-bottom: 15px;
+
+    
+}
+
+.Crowdrise {
+    font-size: 14px;
+    color: #666666;
+    margin-bottom: 50px;
+}
+
+.account {
+    color: #666666;
+    margin-bottom: 20px;
+    font-size: 12px;
+}
+
+.Crowdrise h1 {
+    color: #525252;
+}
+
+a {
+    color: #3498db;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+.Peter {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 15px;
+    margin-top: 5px;
+}
+
+.Peter label {
+    font-size: 12px;
+    color: #666666;
+    margin-bottom: 5px;
+}
+
+.Peter input {
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+
+.Deltondo {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 15px;
+    margin-top: 5px;
+    margin-left: 5px;
+}
+
+.Deltondo label {
+    font-size: 12px;
+    color: #666666;
+    margin-bottom: 5px;
+}
+
+.Deltondo input {
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+
+.Phone {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 15px;
+    margin-top: 30px;
+}
+
+.Phone label {
+    font-size: 12px;
+    color: #666666;
+    margin-bottom: 5px;
+
+}
+
+.Phone input {
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+
+}
+
+.Email {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 15px;
+    margin-top: 30px;
+    margin-left: 5px;
+}
+
+.Email label {
+    font-size: 12px;
+    color: #666666;
+    margin-bottom: 5px;
+}
+
+.Email input {
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+
+.Password {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 15px;
+    margin-top: 55px;
+}
+
+.Password label {
+    font-size: 12px;
+    color: #666666;
+    margin-bottom: 5px;
+
+}
+
+.Password input {
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+
+}
+
+.Confirm {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 15px;
+    margin-top: 55px;
+    margin-left: 5px;
+}
+
+.Confirm label {
+    font-size: 12px;
+    color: #666666;
+    margin-bottom: 5px;
+
+}
+
+.Confirm input {
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+
+.two {
+    display: flex;
+    width: 350px;
+    height: 40px;
+    justify-content: space-between;
+
+}
+
+.bnm-group {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+    margin-top: 90px;
+    font-size: 12px;
+}
+
+.bnm-group input {
+    margin-right: 10px;
+}
+
+.checkbox-group {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+    font-size: 12px;
+}
+
+.checkbox-group input {
+    margin-right: 10px;
+}
+
+button {
+    width: 120px;
+    padding: 10px;
+    background-color: #3498db;
+    color: #ffffff;
+    border: none;
+    border-radius: 4px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin-top: 35px;
+}
+
+button:hover {
+    background-color: #2980b9;
+}
+
+.footer-text {
+    margin-top: 15px;
+    font-size: 12px;
+    color: #666666;
+    text-align: start;
+
+}
+
+.language-selector {
+    display: flex;
+    justify-content: flex-end;
+    font-size: 14px;
+    color: #666;
+    height: 50px;
+    padding-bottom: 10px;
+    padding-right: 10px;
+}
+
+.language-selector select {
+    width: 92px;
+    border: none;
+    font-size: 14px;
+    cursor: pointer;
+}
